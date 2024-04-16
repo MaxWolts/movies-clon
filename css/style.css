@@ -14,6 +14,15 @@
 .navbar-nav .nav-item .nav-link:hover {
     color: #41B06E;
 }
+#navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Establece un color de fondo transparente */
+    transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
+}
+
+.transparent {
+    background-color: transparent !important; /* Hace que la barra de navegación sea completamente transparente */
+}
+
 
 .container {
     max-width: 1200px;
