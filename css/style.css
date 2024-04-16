@@ -37,13 +37,13 @@
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.6em;
     margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #41B06E;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -51,7 +51,7 @@
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #fff;
 }
 
 /* Estilos de las secciones */
