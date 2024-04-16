@@ -8,6 +8,7 @@
 }
 
  /* Header*/
+ /* Nav*/
  .navbar-nav .nav-item .nav-link {
     color: white; 
 }
@@ -32,7 +33,7 @@
 
 /* Estilos del héroe */
 .hero {
-    background-image: url('../img/bg.jpg'); /* Cambia 'background.jpg' por la ruta de tu imagen de fondo */
+    background-image: url('../img/bg.jpg');  /* Imagen de fondo   */
     background-size: cover;
     background-position: center;
     color: white;
