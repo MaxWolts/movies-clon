@@ -6,8 +6,23 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
+ /* Body */
 
  /* Header*/
  .navbar-nav .nav-item .nav-link {
-    color: white; 
+   
+        color: white; 
 }
+
+/*Footer*/
+
+.nav-item .nav-link{
+    color:white;
+}
+
+.copyright {
+    color: white;
+    padding-top: 10px;
+    
+}
+
