@@ -6,12 +6,19 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
+ /* Body */
 
  /* Header*/
  /* Nav*/
  .navbar-nav .nav-item .nav-link {
-    color: white; 
+   
+        color: white; 
 }
+
+
+
+
+
 .navbar-nav .nav-item .nav-link:hover {
     color: #41B06E;
 }
@@ -117,3 +124,20 @@
     color: #fff;
     cursor: pointer;
 }
+
+/*Footer*/
+
+.nav-item .nav-link{
+    color:white;
+}
+
+.copyright {
+    color: white;
+    padding-top: 10px;
+    
+}
+/**
+.footer {
+    margin-top: 0px;
+    margin-bottom: 0px;
+} 
