@@ -1,3 +1,4 @@
+// Navbar dinámico
 $(document).ready(function(){
     $(window).scroll(function() { /* Detecta el desplazamiento de la página */
         if ($(window).scrollTop() === 0) { /* Si la posición de desplazamiento es 0 (inicio de la página) */
@@ -5,5 +6,17 @@ $(document).ready(function(){
         } else {
             $('#navbar').removeClass('transparent'); /* Si no es el inicio, remueve la clase 'transparent' */
         }
+    });
+});
+
+// Buscador
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+
+    searchButton.addEventListener('click', function() {
+        const searchValue = searchInput.value.toLowerCase();
+        // Aquí puedes implementar la lógica de búsqueda
+        console.log('Buscar películas con: ', searchValue);
     });
 });

@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
+
+/* Variables */
+:root {
+    --primary-color: #070F2B;
+    --secondary-color: #41B06E;
+    --transparent-black: rgba(0, 0, 0, 0.8);
+    --button-hover-color: #fff;
+    --text-color: white;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,31 +16,30 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
- /* Body */
 
- /* Header*/
- /* Nav*/
- .navbar-nav .nav-item .nav-link {
-   
-        color: white; 
+/* Body */
+body{
+    background-color: var(--primary-color);
 }
 
-
-
-
+/* Header*/
+/* Nav*/
+.navbar-nav .nav-item .nav-link {
+    color: var(--text-color); 
+}
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #41B06E;
+    color: var(--secondary-color);
 }
+
 #navbar {
-    background-color: rgba(0, 0, 0, 0.5); /* Establece un color de fondo transparente */
+    background-color: var(--transparent-black); /* Establece un color de fondo transparente */
     transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
 }
 
 .transparent {
     background-color: transparent !important; /* Hace que la barra de navegación sea completamente transparente */
 }
-
 
 .container {
     max-width: 1200px;
@@ -61,7 +70,7 @@
 
 .btn {
     display: inline-block;
-    background-color: #41B06E;
+    background-color: var(--secondary-color);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -69,7 +78,28 @@
 }
 
 .btn:hover {
-    background-color: #fff;
+    background-color: var(--button-hover-color);
+}
+
+/* Buscador */
+.container h3{
+    color: var(--text-color);
+    padding: 20px 20px;
+    font-size: 2.1em;
+}
+
+.btn-primary:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+hr {
+    border-top: 2px solid var(--secondary-color); 
+    margin-top: 60px; 
+    margin-bottom: 30px; 
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 /* Estilos de las secciones */
@@ -81,14 +111,14 @@
 .section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
+    color: var(--text-color);
 }
 
-
-.novedades{
+.tendencias{
     display: grid;
 }
 
-.containerMoviesNovedades{
+.containerMoviesTendencias{
     width: auto;
     /* height: 30em; */
     display: flex;
@@ -99,7 +129,7 @@
     overflow: hidden;
 }
 
-.novedades{
+.tendencias{
     border: 1px solid rgba(0, 0, 0, 0.068);
     background-color: #fff;
     width: 20em;
@@ -108,32 +138,32 @@
     overflow: hidden;
     border-radius: 5px;
 }
-.novedades img{
+
+.tendencias img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
-.novedades h3{
+
+.tendencias h3{
     margin: 4px;
     text-align: left;
 }
-.novedades:hover{
-    background-color: #41B06E;
+
+.tendencias:hover{
+    background-color: var(--secondary-color);
     z-index: 1;
     color: #fff;
     cursor: pointer;
 }
 
 /*Footer*/
-
 .nav-item .nav-link{
-    color:white;
+    color: var(--text-color);
 }
 
 .copyright {
-    color: white;
+    color: var(--text-color);
     padding-top: 10px;
-    
 }
-

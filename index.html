@@ -15,7 +15,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#inicio">
                     <i class="fa-solid fa-film" class="d-inline-block align-text-top"></i>
                     <span class="navbar-brand-text">Codeana</span>
                 </a>
@@ -29,7 +29,7 @@
                             <a href="#inicio" class="nav-link">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#planes" class="nav-link">Tendencias</a>
+                            <a href="#tendencias" class="nav-link">Tendencias</a>
                         </li>
                         <li class="nav-item">
                             <a href="#planes" class="nav-link">Iniciar Sesión</a>
@@ -46,61 +46,74 @@
 
 
     <main>
-        <div class="hero">
+        <div class="hero" id="inicio">
         <div class="container">
-            <h1>Bienvenido a nuestra página de películas</h1>
+            <h1>Bienvenido a Codeana</h1>
             <p>Descubre las últimas novedades y tus películas favoritas</p>
-            <a href="#novedades" class="btn">Registrarse</a>
+            <a href="#registrarse" class="btn">Registrarse</a>
         </div>
         </div>
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h3 class="text-center mb-3">¿Qué estas buscando para ver?</h3> <!-- Texto arriba del campo de búsqueda -->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Buscar películas..." id="searchInput">
+                        <button class="btn btn-primary" type="button" id="searchButton">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
 
     </main>
 
     
 
-    <!--SECCION NOVEDADES-->
-    <section id="novedades" class="section containerSection">
+    <!--SECCION TENDENCIAS-->
+    <section id="tendencias" class="section containerSection">
 
-            <h2>Novedades</h2> 
+            <h2>Las tendencias de hoy</h2> 
 
-            <div class="containerMoviesNovedades"> 
-                <div class="novedades">
+            <div class="containerMoviesTendencias"> 
+                <div class="tendencias">
                     <h3>Movie's name</h3>
                     <img src="./img/5.jpg" alt="">
                 </div>
-                <div class="novedades">
+                <div class="tendencias">
                     <h3>Movie's name</h3>
                     <img src="./img/11.jpg" alt="">
                 </div>
-                <div class="novedades">
+                <div class="tendencias">
                     <h3>Movie's name</h3>
                     <img src="./img/2.jpg" alt="">
                 </div>
-                <div class="novedades">
+                <div class="tendencias">
                     <h3>Movie's name</h3>
                     <img src="./img/21.jpg" alt="">
                 </div>
-                <div class="novedades">
+                <div class="tendencias">
                     <h3>Movie's name</h3>
                     <img src="./img/15.jpg" alt="">
                 </div>
-                <div class="novedades">
+                <div class="tendencias">
                     <h3>Movie's name</h3>
                     <img src="./img/13.jpg" alt="">
                 </div>
-                <div class="novedades">
+                <div class="tendencias">
                     <h3>Movie's name</h3>
                     <img src="./img/14.jpg" alt="">
                 </div>
-                <div class="novedades">
+                <div class="tendencias">
                     <h3>Movie's name</h3>
                     <img src="./img/6.jpg" alt="">
                 </div>
             </div>
             <!-- Aquí puedes agregar contenido de las últimas novedades -->
 
-        <div class="tendencias containerSection">
-            <h2>Tendencias</h2>
+        <div class="novedades containerSection">
+            <h2>Novedades</h2>
             
         </div>
     </section>
@@ -110,10 +123,10 @@
     <footer class="absolute-bottom  bg-dark footer mb-0">
         <ul class="nav justify-content-center border-0 mx-0">
             <li class="nav-item">
-                <a href="#" class="nav-link ">Inicio</a>
+                <a href="#inicio" class="nav-link ">Inicio</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Tendencias</a>
+                <a href="#tendencias" class="nav-link">Tendencias</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Iniciar Sesion</a>
