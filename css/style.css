@@ -95,8 +95,8 @@ body{
 
 hr {
     border-top: 2px solid var(--secondary-color); 
-    margin-top: 60px; 
-    margin-bottom: 30px; 
+    margin-top: 100px; 
+    margin-bottom: 20px; 
     width: 80%;
     margin-left: auto; 
     margin-right: auto; 
@@ -104,7 +104,7 @@ hr {
 
 /* Estilos de las secciones */
 .section {
-    padding: 80px 0;
+    padding: 30px 0;
     text-align: center;
 }
 
