@@ -1,14 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
-
-/* Variables */
-:root {
-    --primary-color: #070F2B;
-    --secondary-color: #41B06E;
-    --transparent-black: rgba(0, 0, 0, 0.8);
-    --button-hover-color: #fff;
-    --text-color: white;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -16,30 +6,30 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
+ /* Body */
 
-/* Body */
-body{
-    background-color: var(--primary-color);
+ /* Header*/
+ /* Nav*/
+ .navbar-nav .nav-item .nav-link {
+   
+        color: white; 
 }
 
-/* Header*/
-/* Nav*/
-.navbar-nav .nav-item .nav-link {
-    color: var(--text-color); 
-}
+
+
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: var(--secondary-color);
+    color: #41B06E;
 }
-
 #navbar {
-    background-color: var(--transparent-black); /* Establece un color de fondo transparente */
+    background-color: rgba(0, 0, 0, 0.5); /* Establece un color de fondo transparente */
     transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
 }
 
 .transparent {
     background-color: transparent !important; /* Hace que la barra de navegación sea completamente transparente */
 }
+
 
 .container {
     max-width: 1200px;
@@ -55,7 +45,6 @@ body{
     color: white;
     text-align: center;
     padding: 210px 0;
-    height: 100vh;
 }
 
 .hero h1 {
@@ -70,7 +59,7 @@ body{
 
 .btn {
     display: inline-block;
-    background-color: var(--secondary-color);
+    background-color: #41B06E;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -78,47 +67,26 @@ body{
 }
 
 .btn:hover {
-    background-color: var(--button-hover-color);
-}
-
-/* Buscador */
-.container h3{
-    color: var(--text-color);
-    padding: 20px 20px;
-    font-size: 2.1em;
-}
-
-.btn-primary:hover {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-hr {
-    border-top: 2px solid var(--secondary-color); 
-    margin-top: 100px; 
-    margin-bottom: 20px; 
-    width: 80%;
-    margin-left: auto; 
-    margin-right: auto; 
+    background-color: #fff;
 }
 
 /* Estilos de las secciones */
 .section {
-    padding: 30px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
 .section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
-    color: var(--text-color);
 }
 
-.tendencias{
+
+.novedades{
     display: grid;
 }
 
-.containerMoviesTendencias{
+.containerMoviesNovedades{
     width: auto;
     /* height: 30em; */
     display: flex;
@@ -129,7 +97,7 @@ hr {
     overflow: hidden;
 }
 
-.tendencias{
+.novedades{
     border: 1px solid rgba(0, 0, 0, 0.068);
     background-color: #fff;
     width: 20em;
@@ -138,32 +106,31 @@ hr {
     overflow: hidden;
     border-radius: 5px;
 }
-
-.tendencias img{
+.novedades img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
-
-.tendencias h3{
+.novedades h3{
     margin: 4px;
     text-align: left;
 }
-
-.tendencias:hover{
-    background-color: var(--secondary-color);
+.novedades:hover{
+    background-color: #41B06E;
     z-index: 1;
     color: #fff;
     cursor: pointer;
 }
 
 /*Footer*/
+
 .nav-item .nav-link{
-    color: var(--text-color);
+    color:white;
 }
 
 .copyright {
-    color: var(--text-color);
+    color: white;
     padding-top: 10px;
+    
 }
