@@ -13,7 +13,7 @@
     <header>
 
 
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top z-index-1" id="navbar">
             <div class="container">
                 <a class="navbar-brand" href="#inicio">
                     <i class="fa-solid fa-film" class="d-inline-block align-text-top"></i>
@@ -46,11 +46,11 @@
 
 
     <main>
-        <div class="hero" id="inicio">
-        <div class="container">
+        <div class="hero " id="inicio">
+        <div class="containerHERO display-grid">
             <h1>Bienvenido a Codeana</h1>
             <p>Descubre las últimas novedades y tus películas favoritas</p>
-            <a href="#registrarse" class="btn">Registrarse</a>
+            <a href="#registrarse" class="btn d-inline-block">Registrarse</a>
         </div>
         </div>
 
@@ -70,9 +70,9 @@
          <!--SECCION TENDENCIAS-->
         <section id="tendencias" class="section containerSection">
 
-            <h2 class="text-nowrap">Las tendencias de hoy</h2> 
+            <h2 >Las tendencias de hoy</h2> 
 
-            <div class="containerMoviesTendencias"> 
+            <div class="containerMoviesTendencias d-flex flex-wrap"> 
                 <div class="tendencias">
                     <h3>Movie's name</h3>
                     <img src="./img/5.jpg" alt="">
@@ -105,6 +105,14 @@
                     <h3>Movie's name</h3>
                     <img src="./img/6.jpg" alt="">
                 </div>
+                <div class="tendencias">
+                    <h3>Movie's name</h3>
+                    <img src="./img/8.jpg" alt="">
+                </div>
+                <div class="tendencias">
+                    <h3>Movie's name</h3>
+                    <img src="./img/9.jpg" alt="">
+                </div>
             </div>
             <!-- Aquí puedes agregar contenido de las últimas novedades -->
 
@@ -113,10 +121,9 @@
 
 
 
-        <!--SLIDER PRÓXIMAMENTE-->
-        <section>
-            <h2 class=" text-center text-light text-nowrap">Próximamente</h2>
-
+        <!-- SLIDER PRÓXIMAMENTE -->
+        <section class="proximamente ">
+            <h2 class=" text-center text-light">Próximamente</h2>
             <div class="sectionProximamente">
                 <ul class="d-flex justify-content-space-evenly align-items-center">
                     <li><img src="./img/1.jpg" alt=""></li>

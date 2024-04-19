@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
-<<<<<<< HEAD
-=======
+
+
 
 /* Variables */
 :root {
@@ -11,7 +11,7 @@
     --text-color: white;
 }
 
->>>>>>> 1135dfe84ed4f2e64778e52290393116cfabffc3
+
 *{
     margin: 0;
     padding: 0;
@@ -24,7 +24,6 @@
  /* Header*/
  /* Nav*/
  .navbar-nav .nav-item .nav-link {
-   
         color: white; 
 }
 
@@ -43,12 +42,12 @@
     background-color: transparent !important; /* Hace que la barra de navegación sea completamente transparente */
 }
 
-
+/* 
 .container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-}
+} */
 
 /* Estilos del héroe */
 .hero {
@@ -58,6 +57,8 @@
     color: white;
     text-align: center;
     padding: 210px 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 .hero h1 {
@@ -68,6 +69,10 @@
 .hero p {
     font-size: 1.6em;
     margin-bottom: 30px;
+}
+
+.containerHERO{
+    margin: 20em auto;
 }
 
 .btn {
@@ -113,8 +118,8 @@ section h2 {
 }
 
 .novedades{
-    border: 1px solid rgba(0, 0, 0, 0.068);
-    background-color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #062868;
     width: 20em;
     height: 20em;
     margin: 10px 3px;
@@ -147,10 +152,13 @@ section h2 {
 .copyright {
     color: white;
     padding-top: 10px;
-    
 }
 
 
+
+.proximamente{
+    background-color: #062868;
+}
 
 .sectionProximamente{
     padding:0;
