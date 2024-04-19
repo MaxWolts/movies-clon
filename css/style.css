@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
+<<<<<<< HEAD
+=======
+
+/* Variables */
+:root {
+    --primary-color: #070f2be7;
+    --secondary-color: #41B06E;
+    --transparent-black: rgba(0, 0, 0, 0.8);
+    --button-hover-color: #fff;
+    --text-color: white;
+}
+
+>>>>>>> 1135dfe84ed4f2e64778e52290393116cfabffc3
 *{
     margin: 0;
     padding: 0;
@@ -74,9 +87,12 @@
 .section {
     padding: 80px 0;
     text-align: center;
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
 }
 
-.section h2 {
+section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
 }
@@ -88,7 +104,6 @@
 
 .containerMoviesNovedades{
     width: auto;
-    /* height: 30em; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,3 +149,26 @@
     padding-top: 10px;
     
 }
+
+
+
+.sectionProximamente{
+    padding:0;
+    text-align: center;
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;   
+}
+.sectionProximamente ul{
+    padding: 0;
+}
+
+ul li img {
+    filter: grayscale(90%);
+  }
+
+  ul li img:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+  }
