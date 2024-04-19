@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-    --primary-color: #070F2B;
+    --primary-color: #070f2be7;
     --secondary-color: #41B06E;
     --transparent-black: rgba(0, 0, 0, 0.8);
     --button-hover-color: #fff;
@@ -106,9 +106,12 @@ hr {
 .section {
     padding: 30px 0;
     text-align: center;
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
 }
 
-.section h2 {
+section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
     color: var(--text-color);
@@ -120,7 +123,6 @@ hr {
 
 .containerMoviesTendencias{
     width: auto;
-    /* height: 30em; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,3 +169,26 @@ hr {
     color: var(--text-color);
     padding-top: 10px;
 }
+
+
+
+.sectionProximamente{
+    padding:0;
+    text-align: center;
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;   
+}
+.sectionProximamente ul{
+    padding: 0;
+}
+
+ul li img {
+    filter: grayscale(90%);
+  }
+
+  ul li img:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+  }
