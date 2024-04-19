@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
 
-
-
 /* Variables */
 :root {
-    --primary-color: #070f2be7;
+    --primary-color: #070F2B;
     --secondary-color: #41B06E;
     --transparent-black: rgba(0, 0, 0, 0.8);
     --button-hover-color: #fff;
     --text-color: white;
 }
+
+
 
 
 *{
@@ -19,22 +19,30 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
- /* Body */
+
 
  /* Header*/
  /* Nav*/
  .navbar-nav .nav-item .nav-link {
         color: white; 
+ }
+/* Body */
+body{
+    background-color: var(--primary-color);
 }
 
-
-
+/* Header*/
+/* Nav*/
+.navbar-nav .nav-item .nav-link {
+    color: var(--text-color); 
+}
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #41B06E;
+    color: var(--secondary-color);
 }
+
 #navbar {
-    background-color: rgba(0, 0, 0, 0.5); /* Establece un color de fondo transparente */
+    background-color: var(--transparent-black); /* Establece un color de fondo transparente */
     transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
 }
 
@@ -43,6 +51,8 @@
 }
 
 /* 
+=======
+
 .container {
     width: 100%;
     margin: 0 auto;
@@ -59,6 +69,8 @@
     padding: 210px 0;
     height: 100vh;
     width: 100vw;
+
+
 }
 
 .hero h1 {
@@ -77,7 +89,7 @@
 
 .btn {
     display: inline-block;
-    background-color: #41B06E;
+    background-color: var(--secondary-color);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -85,30 +97,49 @@
 }
 
 .btn:hover {
-    background-color: #fff;
+    background-color: var(--button-hover-color);
+}
+
+/* Buscador */
+.container h3{
+    color: var(--text-color);
+    padding: 20px 20px;
+    font-size: 2.1em;
+}
+
+.btn-primary:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+hr {
+    border-top: 2px solid var(--secondary-color); 
+    margin-top: 100px; 
+    margin-bottom: 20px; 
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 /* Estilos de las secciones */
 .section {
-    padding: 80px 0;
+    padding: 30px 0;
     text-align: center;
-    margin: 10px 0;
-    width: 100%;
-    height: auto;
 }
 
-section h2 {
+.section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
+    color: var(--text-color);
 }
 
-
-.novedades{
+.tendencias{
     display: grid;
 }
 
-.containerMoviesNovedades{
+.containerMoviesTendencias{
     width: auto;
+    /* height: 30em; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,45 +151,57 @@ section h2 {
 .novedades{
     border: 1px solid rgb(255, 255, 255);
     background-color: #062868;
+}
+.tendencias{
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    background-color: #fff;
     width: 20em;
     height: 20em;
     margin: 10px 3px;
     overflow: hidden;
     border-radius: 5px;
 }
-.novedades img{
+
+.tendencias img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
-.novedades h3{
+
+.tendencias h3{
     margin: 4px;
     text-align: left;
 }
-.novedades:hover{
-    background-color: #41B06E;
+
+.tendencias:hover{
+    background-color: var(--secondary-color);
     z-index: 1;
     color: #fff;
     cursor: pointer;
 }
 
 /*Footer*/
-
 .nav-item .nav-link{
-    color:white;
+    color: var(--text-color);
+}
+
+.nav-link:hover{
+    color: var(--secondary-color);
 }
 
 .copyright {
-    color: white;
+    color: var(--text-color);
     padding-top: 10px;
 }
+
 
 
 
 .proximamente{
     background-color: #062868;
 }
+
 
 .sectionProximamente{
     padding:0;
@@ -172,11 +215,11 @@ section h2 {
     padding: 0;
 }
 
-ul li img {
+ ul li img {
     filter: grayscale(90%);
   }
 
-  ul li img:hover {
+ul li img:hover {
     cursor: pointer;
     filter: grayscale(0%);
   }
