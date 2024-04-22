@@ -9,11 +9,6 @@
     --text-color: white;
 }
 
-
-
-body{
-    position: relative;
-}
 *{
     margin: 0;
     padding: 0;
@@ -29,6 +24,7 @@ body{
         color: white; 
  }
 /* Body */
+
 body{
     background-color: var(--primary-color);
 }
@@ -52,15 +48,6 @@ body{
     background-color: transparent !important; /* Hace que la barra de navegación sea completamente transparente */
 }
 
-/* 
-=======
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-} */
-
 /* Estilos del héroe */
 .hero {
     background-image: url('../img/bg.jpg');  /* Imagen de fondo   */
@@ -71,7 +58,6 @@ body{
     padding: 210px 0;
     height: 100vh;
     width: 100vw;
-
 
 }
 
@@ -150,11 +136,7 @@ hr {
     overflow: hidden;
 }
 
-.novedades{
-    border: 1px solid rgb(255, 255, 255);
-    background-color: #062868;
-}
-.tendencias{
+.tendencias {
     border: 1px solid rgba(0, 0, 0, 0.068);
     background-color: #fff;
     width: 20em;
@@ -184,11 +166,11 @@ hr {
 }
 
 /*Footer*/
-.nav-item .nav-link{
+.nav-item .nav-link {
     color: var(--text-color);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--secondary-color);
 }
 
@@ -196,15 +178,15 @@ hr {
     color: var(--text-color);
     padding-top: 10px;
 }
+  /*---fin footer---*/
 
+  /*-- Slider --*/
 
 
 
 .proximamente{
-    background-color: var(--primary-color);
+    background-color: #062868;
 }
-
-
 
 .sectionProximamente{
     padding:0;
@@ -214,6 +196,16 @@ hr {
     height: auto;
     overflow-x: auto;   
 }
+.sectionProximamente  img {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    background-color: #fff;
+    width: 20em;
+    height: 28em;
+    margin: 10px 3px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
 .sectionProximamente ul{
     padding: 0;
 }
@@ -225,104 +217,22 @@ hr {
 ul li img:hover {
     cursor: pointer;
     filter: grayscale(0%);
-  }
-
-
-/* 
-  .video{
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    background-color: #000;
-  }
-
-  .video video{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-} */
-
-.textKeepWatching{
-    position: static;
-}
-.keepWatching{
-    width: 100%;
-    background-color:green;
-    margin: 10px 0;
-}
-.ilustrationInfoMovie{
-    display: flex;
-    padding: 0;
-}
-.textKeepWatching{
-    z-index: 1;
-}
-.infoMovie{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    width: 20%;
-    height: 30em;
-    background-color: #fff;
-    color: #000;
-}
-.infoMovie h3{
-    margin-top: 20px;
-    font-size: 1.3em;
 }
 
-.infoMovie span{
-    position: absolute;
-    bottom: 50px;
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container h3 {
+        font-size: 1.5em; /* Reducir el tamaño del texto */
+    }
+
+    .tendencias h3 {
+        font-size: 1.2em; /* Reducir el tamaño del texto */
+    }
 }
 
-.imgMovie{
-    width: 80%;
-    height: 30em;
-    background-color: black;
-    
-}
-
-.imgMovie{
-    background-image: url('../img/interstellar\ h\ pic.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-}
-
-
-
-.controladorPlay{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-}
-.playController{
-    position: static;
-    margin: 240px;
-    font-size: 2.8em;
-    font-weight: 800;
-    color: black;
-    border-style: inset;
-    border: 3px solid #fff;
-    padding: 25px;
-    border-radius: 45%;
-    
-}
-.playController:hover{
-    color: #fafafa;
-    background-color: #007bff;
-    cursor: pointer;
-}
-
-
-footer{
-    position: absolute;
-    bottom: 0;
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 2em; /* Reducir el tamaño del texto */
+    }
 }
