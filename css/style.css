@@ -148,15 +148,7 @@ hr {
     overflow: hidden;
 }
 
-<<<<<<< HEAD
 .tendencias {
-=======
-.novedades{
-    border: 1px solid rgb(255, 255, 255);
-    background-color: #062868;
-}
-.tendencias{
->>>>>>> 659986ada4be712b78b761b74acb5caf112fb065
     border: 1px solid rgba(0, 0, 0, 0.068);
     background-color: #fff;
     width: 20em;
@@ -203,11 +195,7 @@ hr {
     color: var(--text-color);
 }
 
-<<<<<<< HEAD
 .nav-link:hover {
-=======
-.nav-link:hover{
->>>>>>> 659986ada4be712b78b761b74acb5caf112fb065
     color: var(--secondary-color);
 }
 
@@ -219,9 +207,6 @@ hr {
 
   /*-- Slider --*/
 
-<<<<<<< HEAD
-.sectionProximamente {
-=======
 
 
 .proximamente{
@@ -230,7 +215,6 @@ hr {
 
 
 .sectionProximamente{
->>>>>>> 659986ada4be712b78b761b74acb5caf112fb065
     padding:0;
     text-align: center;
     margin: 50px 0;
@@ -260,15 +244,3 @@ ul li img:hover {
     cursor: pointer;
     filter: grayscale(0%);
   }
-<<<<<<< HEAD
-
-/*---- Fin Slider --*/
-
-/* Paginado Interior */
-
-.main-interior {
-    display: flex;
-    margin: 100px;
-}
-=======
->>>>>>> 659986ada4be712b78b761b74acb5caf112fb065
