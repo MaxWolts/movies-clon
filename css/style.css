@@ -131,7 +131,7 @@ section h2 {
     overflow: hidden;
 }
 
-.tendencias{
+.tendencias {
     border: 1px solid rgba(0, 0, 0, 0.068);
     background-color: #fff;
     width: 20em;
@@ -160,19 +160,37 @@ section h2 {
     cursor: pointer;
 }
 
+ /* Ver Mas */
+ .container-verMas {
+    background-image: url('../img/duna.jpeg');  /* Imagen de fondo   */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 210px 0px;
+    margin: 0 0 10px 0;
+    height: 100vh;
+}
+
+
 /*Footer*/
-.nav-item .nav-link{
+.nav-item .nav-link {
     color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
 }
 
 .copyright {
     color: var(--text-color);
     padding-top: 10px;
 }
+  /*---fin footer---*/
 
+  /*-- Slider --*/
 
-
-.sectionProximamente{
+.sectionProximamente {
     padding:0;
     text-align: center;
     margin: 50px 0;
@@ -180,6 +198,16 @@ section h2 {
     height: auto;
     overflow-x: auto;   
 }
+.sectionProximamente  img {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    background-color: #fff;
+    width: 20em;
+    height: 28em;
+    margin: 10px 3px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
 .sectionProximamente ul{
     padding: 0;
 }
@@ -192,3 +220,12 @@ ul li img {
     cursor: pointer;
     filter: grayscale(0%);
   }
+
+/*---- Fin Slider --*/
+
+/* Paginado Interior */
+
+.main-interior {
+    display: flex;
+    margin: 100px;
+}
