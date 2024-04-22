@@ -11,7 +11,9 @@
 
 
 
-
+body{
+    position: relative;
+}
 *{
     margin: 0;
     padding: 0;
@@ -199,8 +201,9 @@ hr {
 
 
 .proximamente{
-    background-color: #062868;
+    background-color: var(--primary-color);
 }
+
 
 
 .sectionProximamente{
@@ -223,3 +226,103 @@ ul li img:hover {
     cursor: pointer;
     filter: grayscale(0%);
   }
+
+
+/* 
+  .video{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    background-color: #000;
+  }
+
+  .video video{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+.textKeepWatching{
+    position: static;
+}
+.keepWatching{
+    width: 100%;
+    background-color:green;
+    margin: 10px 0;
+}
+.ilustrationInfoMovie{
+    display: flex;
+    padding: 0;
+}
+.textKeepWatching{
+    z-index: 1;
+}
+.infoMovie{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    width: 20%;
+    height: 30em;
+    background-color: #fff;
+    color: #000;
+}
+.infoMovie h3{
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+.infoMovie span{
+    position: absolute;
+    bottom: 50px;
+}
+
+.imgMovie{
+    width: 80%;
+    height: 30em;
+    background-color: black;
+    
+}
+
+.imgMovie{
+    background-image: url('../img/interstellar\ h\ pic.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+
+
+.controladorPlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.playController{
+    position: static;
+    margin: 240px;
+    font-size: 2.8em;
+    font-weight: 800;
+    color: black;
+    border-style: inset;
+    border: 3px solid #fff;
+    padding: 25px;
+    border-radius: 45%;
+    
+}
+.playController:hover{
+    color: #fafafa;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
