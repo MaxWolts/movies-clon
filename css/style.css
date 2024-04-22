@@ -2,12 +2,15 @@
 
 /* Variables */
 :root {
-    --primary-color: #070f2be7;
+    --primary-color: #070F2B;
     --secondary-color: #41B06E;
     --transparent-black: rgba(0, 0, 0, 0.8);
     --button-hover-color: #fff;
     --text-color: white;
 }
+
+
+
 
 *{
     margin: 0;
@@ -17,6 +20,12 @@
     text-decoration: none;
 }
 
+
+ /* Header*/
+ /* Nav*/
+ .navbar-nav .nav-item .nav-link {
+        color: white; 
+ }
 /* Body */
 body{
     background-color: var(--primary-color);
@@ -41,11 +50,14 @@ body{
     background-color: transparent !important; /* Hace que la barra de navegación sea completamente transparente */
 }
 
+/* 
+=======
+
 .container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
-}
+} */
 
 /* Estilos del héroe */
 .hero {
@@ -56,6 +68,9 @@ body{
     text-align: center;
     padding: 210px 0;
     height: 100vh;
+    width: 100vw;
+
+
 }
 
 .hero h1 {
@@ -66,6 +81,10 @@ body{
 .hero p {
     font-size: 1.6em;
     margin-bottom: 30px;
+}
+
+.containerHERO{
+    margin: 10em auto;
 }
 
 .btn {
@@ -106,12 +125,9 @@ hr {
 .section {
     padding: 30px 0;
     text-align: center;
-    margin: 10px 0;
-    width: 100%;
-    height: auto;
 }
 
-section h2 {
+.section h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
     color: var(--text-color);
@@ -123,6 +139,7 @@ section h2 {
 
 .containerMoviesTendencias{
     width: auto;
+    /* height: 30em; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +148,15 @@ section h2 {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 .tendencias {
+=======
+.novedades{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #062868;
+}
+.tendencias{
+>>>>>>> 659986ada4be712b78b761b74acb5caf112fb065
     border: 1px solid rgba(0, 0, 0, 0.068);
     background-color: #fff;
     width: 20em;
@@ -178,7 +203,11 @@ section h2 {
     color: var(--text-color);
 }
 
+<<<<<<< HEAD
 .nav-link:hover {
+=======
+.nav-link:hover{
+>>>>>>> 659986ada4be712b78b761b74acb5caf112fb065
     color: var(--secondary-color);
 }
 
@@ -190,7 +219,18 @@ section h2 {
 
   /*-- Slider --*/
 
+<<<<<<< HEAD
 .sectionProximamente {
+=======
+
+
+.proximamente{
+    background-color: #062868;
+}
+
+
+.sectionProximamente{
+>>>>>>> 659986ada4be712b78b761b74acb5caf112fb065
     padding:0;
     text-align: center;
     margin: 50px 0;
@@ -212,14 +252,15 @@ section h2 {
     padding: 0;
 }
 
-ul li img {
+ ul li img {
     filter: grayscale(90%);
   }
 
-  ul li img:hover {
+ul li img:hover {
     cursor: pointer;
     filter: grayscale(0%);
   }
+<<<<<<< HEAD
 
 /*---- Fin Slider --*/
 
@@ -229,3 +270,5 @@ ul li img {
     display: flex;
     margin: 100px;
 }
+=======
+>>>>>>> 659986ada4be712b78b761b74acb5caf112fb065
