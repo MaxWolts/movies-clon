@@ -9,9 +9,6 @@
     --text-color: white;
 }
 
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -27,6 +24,7 @@
         color: white; 
  }
 /* Body */
+
 body{
     background-color: var(--primary-color);
 }
@@ -50,15 +48,6 @@ body{
     background-color: transparent !important; /* Hace que la barra de navegación sea completamente transparente */
 }
 
-/* 
-=======
-
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-} */
-
 /* Estilos del héroe */
 .hero {
     background-image: url('../img/bg.jpg');  /* Imagen de fondo   */
@@ -69,7 +58,6 @@ body{
     padding: 210px 0;
     height: 100vh;
     width: 100vw;
-
 
 }
 
@@ -177,19 +165,6 @@ hr {
     cursor: pointer;
 }
 
- /* Ver Mas */
- .container-verMas {
-    background-image: url('../img/duna.jpeg');  /* Imagen de fondo   */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 210px 0px;
-    margin: 0 0 10px 0;
-    height: 100vh;
-}
-
-
 /*Footer*/
 .nav-item .nav-link {
     color: var(--text-color);
@@ -212,7 +187,6 @@ hr {
 .proximamente{
     background-color: #062868;
 }
-
 
 .sectionProximamente{
     padding:0;
@@ -243,4 +217,4 @@ hr {
 ul li img:hover {
     cursor: pointer;
     filter: grayscale(0%);
-  }
+}
