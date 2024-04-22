@@ -218,3 +218,21 @@ ul li img:hover {
     cursor: pointer;
     filter: grayscale(0%);
 }
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container h3 {
+        font-size: 1.5em; /* Reducir el tamaño del texto */
+    }
+
+    .tendencias h3 {
+        font-size: 1.2em; /* Reducir el tamaño del texto */
+    }
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .section h2 {
+        font-size: 2em; /* Reducir el tamaño del texto */
+    }
+}
