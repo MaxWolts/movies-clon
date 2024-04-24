@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+
+        <section>
+            <form method="get">
+                <fieldset>
+                    <legend>Registro de Usuario</legend>
+                    <div>
+
+                        <input class="entrada_datos" type="text" id="nombre" placeholder="nombre" name="nombre"
+                            minlength="3" maxlength="30" required>
+                    </div>
+                    <div>
+                        <input class="entrada_datos" type="text" id="apellido" placeholder="apellido" name="apellido"
+                            minlength="3" maxlength="30" required>
+                    </div>
+                    <div>
+                        <input type="email" id="mail" class="entrada_datos" name="mail" placeholder="Correo electronico"
+                            required pattern="">
+                    </div>
+                    <div>
+                        <input type="date" name="fecha" id="fecha" class="entrada_datos" required>
+                    </div>
+                    <div>
+                        <select class="option">
+                            <option value="">Seleccione País</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CH">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Perú</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="VE">Venezuela</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="password" name="contraseña" class="entrada_datos" placeholder="contraseña"
+                            id="contraseña" required>
+                    </div>
+                    <div class="condiciones">
+                        <input type="checkbox" id="condiciones" name="check[]" required>
+                        <label for="condiciones" class="condiciones">Acepto terminos y condiciones</label>
+                    </div>
+                    <div class="cont_btm">
+                        <input class="btm" type="submit" value="Registrarse">
+                    </div>
+                    <div class="link">
+                        <a href="#">¿Nesesitas ayuda?</a>
+                        <a href="">¿Ya tienes una cuenta?</a>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
