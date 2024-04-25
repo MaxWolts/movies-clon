@@ -9,19 +9,12 @@
     --text-color: white;
 }
 
-
-
-body{
-    overflow-x: hidden;
-    padding: 0;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
-    font-size: 15px;
 }
 
 
@@ -57,19 +50,28 @@ body{
 
 /* Estilos del héroe */
 .hero {
-    background-image: url('../img/bg.jpg');  /* Imagen de fondo   */
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
     color: white;
     text-align: center;
     padding: 210px 0;
     height: 100vh;
-    width: 100vw;
-    display: grid;
-    justify-content: center;
-    justify-items: center;
-
 }
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(0.5px); /* Aplica el desenfoque al bg */
+    z-index: -1;
+}
+
+
 
 .hero h1 {
     font-size: 3em;
@@ -77,13 +79,13 @@ body{
 }
 
 .hero p {
-    font-size: 1.3em;
+    font-size: 1.6em;
     margin-bottom: 30px;
-
 }
 
 .containerHERO{
     margin: 10em auto;
+    filter: blur(7px);
 }
 
 .btn {
@@ -100,15 +102,10 @@ body{
 }
 
 /* Buscador */
-.containerSearch{
-    margin: 20px auto;
-}
-
 .container h3{
     color: var(--text-color);
     padding: 20px 20px;
-    font-size: 40px;
-    /* text-align: left; */
+    font-size: 2.1em;
 }
 
 .btn-primary:hover {
@@ -127,7 +124,7 @@ hr {
 
 /* Estilos de las secciones */
 .section {
-    padding: 30px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -137,38 +134,36 @@ hr {
     color: var(--text-color);
 }
 
+.tendencias{
+    display: grid;
+}
 
-.containerMoviesTendencias{
-    width: auto;
-    /* height: 30em; */
+.containerMoviesTendencias {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    padding: 3px;
-    overflow: hidden;
+    padding: 20px; /* Espacio alrededor de las tarjetas */
 }
 
 .tendencias {
-    border: 1px solid rgba(0, 0, 0, 0.068);
-    background-color: #fff;
-    width: 20em;
-    height: 20em;
-    margin: 10px 3px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 230px; /* Aumentado el ancho de las tarjetas */
+    height: auto; /* Cambiado a una altura variable */
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+.tendencias:hover {
+    transform: scale(1.05); 
 }
 
-.tendencias img{
+.tendencias img {
     width: 100%;
-    height: 100%;
+    height: 320px; /* Altura fija para mantener la proporción */
     object-fit: cover;
     object-position: center;
-}
-
-.tendencias h3{
-    margin: 4px;
-    text-align: left;
 }
 
 .tendencias:hover{
@@ -176,6 +171,41 @@ hr {
     z-index: 1;
     color: #fff;
     cursor: pointer;
+}
+
+  /*-- Slider --*/
+  .prox{
+    padding: 20px 130px;
+}
+
+.sectionProximamente{
+    padding: 0;
+    text-align: center;
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+}
+.sectionProximamente  img {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    width: 14em;
+    height: 20em;
+    margin: 10px 15px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.sectionProximamente ul{
+    padding: 0;
+}
+
+ul li img {
+    filter: grayscale(90%);
+  }
+
+ul li img:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
 }
 
 /*Footer*/
@@ -190,120 +220,70 @@ hr {
 .copyright {
     color: var(--text-color);
     padding-top: 10px;
-    margin: 0;
-}
-  /*---fin footer---*/
-
-  /*-- Slider --*/
-
-
-
-.proximamente{
-    background-color: #062868;
-}
-
-.sectionProximamente{
-    padding:0;
-    text-align: center;
-    margin: 50px 0;
-    width: 100%;
-    height: auto;
-    overflow-x: auto;   
-}
-.sectionProximamente  img {
-    border: 1px solid rgba(0, 0, 0, 0.068);
-    background-color: #fff;
-    width: 20em;
-    height: 28em;
-    margin: 10px 3px;
-    overflow: hidden;
-    border-radius: 5px;
-}
-
-.sectionProximamente ul{
-    padding: 0;
-}
-
- ul li img {
-    filter: grayscale(90%);
-  }
-
-ul li img:hover {
-    cursor: pointer;
-    filter: grayscale(0%);
-}
-
-
-/*-----------------SECCION SEGUIR VIENDO----------------*/
-
-.movieVideo{
-    width: 100%;
-    height: 400px;
-    background-color: #000;
-    margin-bottom: 5em;    
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.movieVideo h2{
-    z-index: 1;
-}
-
-.ilustrationInfoMovie{
-    width: 30%;
-    height: 100% ;
-    background-color: #fff;
-}
-
-
-.infoMovie{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.infoMovie span{
-    position: absolute;
-    bottom: 20px;
-}
-
-.ilustrationMovie{
-    width: 70%;
-    height: 100%;
-    background-image: url('../img/interstellar\ h\ pic.webp');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ilustrationMovie span{
-    border-radius: 50%;
-    font-size: 4em;
-    background-color: #ffffff71;
-    font-weight: 200;
 }
 
 
 
+/* Estilos de barra de desplazamiento */
+::-webkit-scrollbar {
+    background-color: black; 
+    width: 12px; 
+}
 
 
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color); 
+    border-radius: 2px; /
+}
 
 
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
 
+    /* Nav */
+    #navbar {
+        background-color: var(--transparent-black) !important;
+    }
+    /* Fonts size mas bajos */
+    .container h3 {
+        font-size: 1.5em; 
+    }
 
+    .tendencias h3 {
+        font-size: 1.2em; 
+    }
+    .section h2 {
+        font-size: 2em; 
+    }
+    .prox h2{
+        font-size: 2em;
+    }
+}
 
+@media (max-width: 538px) {
+    .tendencias {
+        width: 300px; /* Aumentado el ancho de las tarjetas */
+        height: auto;
+    }
 
+    .tendencias img {
+        height: 450px;
+    }
 
+    .prox{
+        padding: 0 20px;
+    }
+    .sectionProximamente  img{
+        width: 10em;
+        height: 16em;
 
+    }
 
+    .footer .nav-link{
+        font-size: 0.7rem;
+    }
 
-
-
+    .footer p{
+        font-size: 0.8rem;
+    }
+}

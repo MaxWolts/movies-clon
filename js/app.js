@@ -9,14 +9,3 @@ $(document).ready(function(){
     });
 });
 
-// Buscador
-document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.getElementById('searchInput');
-    const searchButton = document.getElementById('searchButton');
-
-    searchButton.addEventListener('click', function() {
-        const searchValue = searchInput.value.toLowerCase();
-        // Aquí puedes implementar la lógica de búsqueda
-        console.log('Buscar películas con: ', searchValue);
-    });
-});
