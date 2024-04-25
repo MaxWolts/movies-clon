@@ -40,6 +40,7 @@ form {
 }
 
 #navbar {
+    position: relative;
     background-color: var(--transparent-black); /* Establece un color de fondo transparente */
     transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
 }
@@ -60,12 +61,12 @@ form {
   /*---fin footer---*/
 
 .bodyLogin {
-    align-content: center;
+    align-content: space-between;
     background: linear-gradient(to right top, #24242473, #24242473), url("../img/bg-register.jpg");
     background-size: cover;
     background-position: center;
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
 
     .main {
         .seccionLogin {
@@ -78,7 +79,7 @@ form {
             height: 90vh;
             justify-content: center;
             padding: 40px 20px;
-            margin: 0 auto;
+            margin: 2rem auto;
             width: 30%;
 
             .tituloLogin {
