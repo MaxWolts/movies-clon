@@ -1,5 +1,10 @@
 :root {
     --principalLogin: #9f3647;
+    --primary-color: #070F2B;
+    --secondary-color: #41B06E;
+    --transparent-black: rgba(0, 0, 0, 0.8);
+    --button-hover-color: #fff;
+    --text-color: white;
 }
 
 * {
@@ -23,6 +28,36 @@ form {
         margin-bottom: 10px;
     }
 }
+
+/* Header*/
+/* Nav*/
+.navbar-nav .nav-item .nav-link {
+    color: var(--text-color); 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+#navbar {
+    background-color: var(--transparent-black); /* Establece un color de fondo transparente */
+    transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
+}
+/*Footer*/
+.nav-item .nav-link {
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    color: var(--text-color);
+    padding-top: 10px;
+    margin: 0;
+}
+  /*---fin footer---*/
 
 .bodyLogin {
     align-content: center;
