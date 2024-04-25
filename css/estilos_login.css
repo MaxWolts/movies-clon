@@ -1,0 +1,208 @@
+:root {
+    --principalLogin: #9f3647;
+    --primary-color: #070F2B;
+    --secondary-color: #41B06E;
+    --transparent-black: rgba(0, 0, 0, 0.8);
+    --button-hover-color: #fff;
+    --text-color: white;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+
+    .error input:not(.check, .boton),
+    .error select {
+        border: 1px solid #ff0000;
+    }
+
+    .error-text {
+        color: #ff0000;
+        font-size: 0.8rem;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Header*/
+/* Nav*/
+.navbar-nav .nav-item .nav-link {
+    color: var(--text-color); 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+#navbar {
+    background-color: var(--transparent-black); /* Establece un color de fondo transparente */
+    transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
+}
+/*Footer*/
+.nav-item .nav-link {
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    color: var(--text-color);
+    padding-top: 10px;
+    margin: 0;
+}
+  /*---fin footer---*/
+
+.bodyLogin {
+    align-content: center;
+    background: linear-gradient(to right top, #24242473, #24242473), url("../img/bg-register.jpg");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    height: 100vh;
+
+    .main {
+        .seccionLogin {
+            align-items: center;
+            background-color: rgb(42, 42, 42);
+            border-radius: 5px;
+            display: flex;
+            font-size: 1.2rem;
+            flex-direction: column;
+            height: 90vh;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 0 auto;
+            width: 30%;
+
+            .tituloLogin {
+                color: #f0f0f0;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            form {
+                padding: 40px;
+                width: 100%;
+
+                input:not(.check, .boton),
+                select {
+                    background-color: #333333;
+                    border-radius: 20px;
+                    border: 2px solid var(--principalLogin);
+                    color: rgb(255, 255, 255);
+                    font-size: 1.2rem;
+                    height: 40px;
+                    margin-bottom: 10px;
+                    outline: none;
+                    padding: 0px 20px;
+                    width: 100%;
+                }
+
+                .error input:not(.check, .boton),
+                .error select {
+                    border: 1px solid #ff0000;
+                }
+
+                .error-text {
+                    color: #ff0000;
+                    font-size: 0.8rem;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                }
+
+                .terminos {
+                    align-items: center;
+                    display: flex;
+                    font-size: 0.8rem;
+                    margin-bottom: 20px;
+
+                    .textoCheck {
+                        margin-left: 10px;
+                    }
+                }
+
+                .boton {
+                    background-color: var(--principalLogin);
+                    box-sizing: content-box;
+                    border: 2px solid var(--principalLogin);
+                    border-radius: 5px;
+                    color: #ffffff;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding: 1rem 1rem;
+                    width: 87%;
+                }
+                .boton:hover {
+                    background-color: #b74255;
+                }
+
+                .registrarse {
+                    color: #787878;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin-top: 40px;
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .bodyLogin {
+
+        .main {
+            .seccionLogin {
+                padding: 10px 10px;
+                width: 95%;
+
+                .tituloLogin {
+                    font-size: 2rem;
+                }
+
+                form {
+                    text-align: center;
+                    width: 100%;
+
+                    input:not(.check, .boton),
+                    select {
+                        height: 35px;
+                        font-size: 1rem;
+                        width: 80%;
+                    }
+
+                    .terminos {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 0.7rem;
+                    }
+
+                    .boton {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        width: 70%;
+                        padding: 0.8rem 0.8rem;
+                        font-size: 0.8rem;
+                    }
+
+                    .registrarse {
+                        font-size: 0.8rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
