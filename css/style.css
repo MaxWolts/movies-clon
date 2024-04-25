@@ -21,6 +21,7 @@ body{
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    font-size: 15px;
 }
 
 
@@ -64,6 +65,9 @@ body{
     padding: 210px 0;
     height: 100vh;
     width: 100vw;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
 
 }
 
@@ -73,8 +77,9 @@ body{
 }
 
 .hero p {
-    font-size: 1.6em;
+    font-size: 1.3em;
     margin-bottom: 30px;
+
 }
 
 .containerHERO{
@@ -95,10 +100,15 @@ body{
 }
 
 /* Buscador */
+.containerSearch{
+    margin: 20px auto;
+}
+
 .container h3{
     color: var(--text-color);
     padding: 20px 20px;
-    font-size: 2.1em;
+    font-size: 40px;
+    /* text-align: left; */
 }
 
 .btn-primary:hover {
@@ -127,9 +137,6 @@ hr {
     color: var(--text-color);
 }
 
-.tendencias{
-    display: grid;
-}
 
 .containerMoviesTendencias{
     width: auto;
@@ -234,6 +241,8 @@ ul li img:hover {
     height: 400px;
     background-color: #000;
     margin-bottom: 5em;    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .movieVideo h2{
@@ -296,20 +305,5 @@ ul li img:hover {
 
 
 
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .container h3 {
-        font-size: 1.5em; /* Reducir el tamaño del texto */
-    }
 
-    .tendencias h3 {
-        font-size: 1.2em; /* Reducir el tamaño del texto */
-    }
-}
 
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .section h2 {
-        font-size: 2em; /* Reducir el tamaño del texto */
-    }
-}
