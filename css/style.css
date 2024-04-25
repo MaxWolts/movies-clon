@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&display=swap');
+
+/* Variables */
+:root {
+    --principalLogin: #9f3647;
+    --primary-color: #070F2B;
+    --secondary-color: #41B06E;
+    --transparent-black: rgba(0, 0, 0, 0.8);
+    --button-hover-color: #fff;
+    --text-color: white;
+}
+
+
+
+body{
+    overflow-x: hidden;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+ /* Header*/
+ /* Nav*/
+ .navbar-nav .nav-item .nav-link {
+        color: white; 
+ }
+/* Body */
+
+body{
+    background-color: var(--primary-color);
+}
+
+/* Header*/
+/* Nav*/
+.navbar-nav .nav-item .nav-link {
+    color: var(--text-color); 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+#navbar {
+    background-color: var(--transparent-black); /* Establece un color de fondo transparente */
+    transition: background-color 0.3s; /* Agrega una transición suave al cambio de color de fondo */
+}
+
+.transparent {
+    background-color: transparent !important; /* Hace que la barra de navegación sea completamente transparente */
+}
+
+/* Estilos del héroe */
+.hero {
+    background-image: url('../img/bg.jpg');  /* Imagen de fondo   */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 210px 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+
+}
+
+.containerHERO{
+    margin: 10em auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Buscador */
+.containerSearch{
+    margin: 20px auto;
+}
+
+.container h3{
+    color: var(--text-color);
+    padding: 20px 20px;
+    font-size: 40px;
+    /* text-align: left; */
+}
+
+.btn-primary:hover {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+hr {
+    border-top: 2px solid var(--secondary-color); 
+    margin-top: 100px; 
+    margin-bottom: 20px; 
+    width: 80%;
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+/* Estilos de las secciones */
+.section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+
+.containerMoviesTendencias{
+    width: auto;
+    /* height: 30em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.tendencias {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    background-color: #fff;
+    width: 20em;
+    height: 20em;
+    margin: 10px 3px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.tendencias img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tendencias h3{
+    margin: 4px;
+    text-align: left;
+}
+
+.tendencias:hover{
+    background-color: var(--secondary-color);
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Footer*/
+.nav-item .nav-link {
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    color: var(--text-color);
+    padding-top: 10px;
+    margin: 0;
+}
+  /*---fin footer---*/
+
+  /*-- Slider --*/
+
+
+
+.proximamente{
+    background-color: #062868;
+}
+
+.sectionProximamente{
+    padding:0;
+    text-align: center;
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;   
+}
+.sectionProximamente  img {
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    background-color: #fff;
+    width: 20em;
+    height: 28em;
+    margin: 10px 3px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.sectionProximamente ul{
+    padding: 0;
+}
+
+ ul li img {
+    filter: grayscale(90%);
+  }
+
+ul li img:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+}
+
+
+/*-----------------SECCION SEGUIR VIENDO----------------*/
+
+.movieVideo{
+    width: 100%;
+    height: 400px;
+    background-color: #000;
+    margin-bottom: 5em;    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movieVideo h2{
+    z-index: 1;
+}
+
+.ilustrationInfoMovie{
+    width: 30%;
+    height: 100% ;
+    background-color: #fff;
+}
+
+
+.infoMovie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.infoMovie span{
+    position: absolute;
+    bottom: 20px;
+}
+
+.ilustrationMovie{
+    width: 70%;
+    height: 100%;
+    background-image: url('../img/interstellar\ h\ pic.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ilustrationMovie span{
+    border-radius: 50%;
+    font-size: 4em;
+    background-color: #ffffff71;
+    font-weight: 200;
+}
+/* estilos de video */
+
+
+.copyright {
+    color: var(--text-color);
+    padding-top: 10px;
+    margin: 0;
+    font-size: 0.5em;
+}
+
+.transparent {
+    background-color: transparent !important; /* Hace que la barra de navegación sea completamente transparente */
+}
+
+/* header{
+    width: 100%;
+    height: 80vh;
+    margin-top: 3.5em;
+
+}
+
+header video{
+    width: 100%;
+    height: 100%;
+} */
+
+.footer{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(92, 87, 87, 0.726);
+}
+/* responsive */
+
+@media (max-width: 650px) {
+    /* .container h3 {
+        font-size: 1.5em; 
+    }
+
+    .tendencias h3 {
+        font-size: 1.2em; 
+    }
+    .section h2 {
+        font-size: 2em; 
+} */
+
+
+    .containerMoviesTendencias .tendencias{
+        width: 80%;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+    .containerMoviesTendencias .tendencias{
+        width: 90%;
+    }
+
+
+    .infoMovie h3{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 250px) {
+    .hero .container h1{
+        font-size: 2.4em;
+        
+    }
+
+
+    .infoMovie h3{
+        font-size: 0.5rem;
+    }
+}
+
+/* register */
+
+.body{
+    background-image: url(../img/fondo.jpg);
+}
+
+.section{
+    background-color: black;
+    color: white;
+}
+
+#divForm{
+    background-color: #bdbdbd;
+    border: 2px solid #9f3647;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+#cont_btn{
+    button:hover{
+        background-color:blue;
+    }
+}
+.link{
+    a{
+        margin: 1rem;
+        color: rgba(255, 255, 255, 0.847);
+        text-decoration: none;
+        transition: color 0.5s, text-decoration 0.5s;
+    }
+    a:hover{
+        color: rgb(255, 0, 0);
+        text-decoration: underline;
+    }
+}
+
+/* login */
+
+.bodyLogin {
+    align-content: space-between;
+    background: linear-gradient(to right top, #24242473, #24242473), url("../img/bg-register.jpg");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    min-height: 100vh;
+
+    .main {
+        .seccionLogin {
+            align-items: center;
+            background-color: rgb(42, 42, 42);
+            border-radius: 5px;
+            display: flex;
+            font-size: 1.2rem;
+            flex-direction: column;
+            height: 90vh;
+            justify-content: center;
+            padding: 40px 20px;
+            margin: 2rem auto;
+            width: 30%;
+
+            .tituloLogin {
+                color: #f0f0f0;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            form {
+                padding: 40px;
+                width: 100%;
+
+                input:not(.check, .boton),
+                select {
+                    background-color: #333333;
+                    border-radius: 20px;
+                    border: 2px solid var(--principalLogin);
+                    color: rgb(255, 255, 255);
+                    font-size: 1.2rem;
+                    height: 40px;
+                    margin-bottom: 10px;
+                    outline: none;
+                    padding: 0px 20px;
+                    width: 100%;
+                }
+
+                .error input:not(.check, .boton),
+                .error select {
+                    border: 1px solid #ff0000;
+                }
+
+                .error-text {
+                    color: #ff0000;
+                    font-size: 0.8rem;
+                    margin-top: 0px;
+                    margin-bottom: 10px;
+                }
+
+                .terminos {
+                    align-items: center;
+                    display: flex;
+                    font-size: 0.8rem;
+                    margin-bottom: 20px;
+
+                    .textoCheck {
+                        margin-left: 10px;
+                    }
+                }
+
+                .boton {
+                    background-color: var(--principalLogin);
+                    box-sizing: content-box;
+                    border: 2px solid var(--principalLogin);
+                    border-radius: 5px;
+                    color: #ffffff;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding: 1rem 1rem;
+                    width: 87%;
+                }
+                .boton:hover {
+                    background-color: #b74255;
+                }
+
+                .registrarse {
+                    color: #787878;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    margin-top: 40px;
+                    text-decoration: none;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .bodyLogin {
+
+        .main {
+            .seccionLogin {
+                padding: 10px 10px;
+                width: 95%;
+
+                .tituloLogin {
+                    font-size: 2rem;
+                }
+
+                form {
+                    text-align: center;
+                    width: 100%;
+
+                    input:not(.check, .boton),
+                    select {
+                        height: 35px;
+                        font-size: 1rem;
+                        width: 80%;
+                    }
+
+                    .terminos {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 0.7rem;
+                    }
+
+                    .boton {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        width: 70%;
+                        padding: 0.8rem 0.8rem;
+                        font-size: 0.8rem;
+                    }
+
+                    .registrarse {
+                        font-size: 0.8rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
