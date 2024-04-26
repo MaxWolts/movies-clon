@@ -321,7 +321,6 @@ header video{
     margin-top: 20px;
     width: 100%;
     height: auto;
-    position: absolute;
     bottom: 0;
     background-color: rgba(92, 87, 87, 0.726);
 }
