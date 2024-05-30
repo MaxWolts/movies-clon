@@ -1,82 +1,76 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form');
+document.addEventListener("DOMContentLoaded", function () {
+    const formulario = document.getElementById('formulario');
+    const mensajeError = document.getElementById('mensajeError');
 
-    form.addEventListener('submit', (event) => {
-        if (!validateForm()) {
-            event.preventDefault();
+    formulario.addEventListener('submit', function (evento) {
+        evento.preventDefault(); // Previene el envío del formulario para poder validarlo con Javascript
+
+        let email = document.getElementById('email').value;
+        let pass = document.getElementById('password').value;
+
+        if (email.trim() === '') {
+            mensajeError.innerText = 'El campo email no puede estar vacío.';
+            return;
+        }
+
+        if (!validarEmail(email)) {
+            mensajeError.innerText = 'El formato del email no es válido.';
+            return;
+        }
+
+        if (pass === '') {
+            mensajeError.innerText = 'La contraseña no puede estar en blanco.';
+            return;
+        }
+
+        let val = checkPasswordStrength(pass);
+        mensajeError.innerText = val;
+        
+        // Si todo está correcto, se puede proceder a enviar el formulario o hacer alguna otra acción
+        if (val === '') {
+            mensajeError.innerText = '';
+            formulario.submit(); // Envía el formulario si todas las validaciones son exitosas
         }
     });
 
-    const validateForm = () => {
-        let isValid = true;
-        isValid = validateEmailField('email', 'El correo no es válido') && isValid;
-        isValid = validateField('password', 'La contraseña es obligatoria') && isValid;
+    function validarEmail(email) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
 
-        return isValid;
-    };
-
-    const validateField = (fieldId, errorMessage) => {
-        const field = document.getElementById(fieldId);
-        const value = field.value.trim();
-        if (value === '') {
-            setErrorFor(field, errorMessage);
-            return false;
+    function checkPasswordStrength(password) {
+        // Initialize variables
+        var strength = 0;
+        var tips = "";
+      
+        // Check password length
+        if (password.length < 8) {
+          tips += "Deberías alargar la contraseña(min 8). ";
         } else {
-            setSuccessFor(field);
-            return true;
+          strength += 1;
         }
-    };
-
-    const validateEmailField = (fieldId, errorMessage) => {
-        const field = document.getElementById(fieldId);
-        const email = field.value.trim();
-        if (email === '') {
-            setErrorFor(field, 'El correo es obligatorio');
-            return false;
-        } else if (!isEmail(email)) {
-            setErrorFor(field, errorMessage);
-            return false;
+      
+        // Check for mixed case
+        if (password.match(/[a-z]/) && password.match(/[A-Z]/)) {
+          strength += 1;
         } else {
-            setSuccessFor(field);
-            return true;
+          tips += "Utilice letras minúsculas y mayúsculas. ";
         }
-    };
-
-    const setErrorFor = (input, message) => {
-        const formControl = input.closest('div');
-        const errorText = formControl.querySelector('.error-text');
-        formControl.classList.add('error');
-        errorText.innerText = message;
-        input.focus();
-    };
-
-    const setSuccessFor = (input) => {
-        const formControl = input.closest('div');
-        formControl.classList.remove('error');
-        const errorText = formControl.querySelector('.error-text');
-        errorText.innerText = '';
-    };
-
-    const isEmail = (email) => {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(email);
-    };
-     form.querySelectorAll('input').forEach(input => {
-        input.addEventListener('input', () => {
-            const value = input.value.trim();
-            if (value !== '') {
-                setSuccessFor(input);
-            }
-        });
-    });
-     form.querySelectorAll('select').forEach(select => {
-        select.addEventListener('change', () => {
-            const value = select.value;
-            if (value !== '') {
-                setSuccessFor(select);
-            }
-        });
-    });
+      
+        // Check for numbers
+        if (password.match(/\d/)) {
+          strength += 1;
+        } else {
+          tips += "Incluya al menos un número. ";
+        }
+      
+        // Check for special characters
+        if (password.match(/[^a-zA-Z\d]/)) {
+          strength += 1;
+        } else {
+          tips += "Incluya al menos un caracter especial. ";
+        }
+      
+        return tips; // Devuelve el mensaje de error o cadena vacía si no hay errores
+    }
 });
-
-

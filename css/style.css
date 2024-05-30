@@ -10,6 +10,47 @@
     --text-color: white;
 }
 
+.poster{
+    height: 250px;
+    width: 250px;
+}
+
+.pelicula{
+    margin: 20px;
+    width: 250px;
+}
+
+.nameMovie{
+    font-size: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.mainApi{
+    padding-top: 80px;
+    color: black;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.poster{
+    width: 350;
+    height: 350;
+}
+
+.errorForm{
+    color: red;
+    text-align: center;
+}
+
+.formLogin{
+    margin-top: 20px;
+}
 
 
 body{
@@ -499,6 +540,10 @@ header video{
                     font-weight: 400;
                     margin-top: 40px;
                     text-decoration: none;
+                }
+
+                .p{
+                    color: white;
                 }
 
             }

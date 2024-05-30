@@ -65,27 +65,31 @@
 
     <main id="main" class="main">
       <section data-aos="zoom-in" data-aos-duration="1000" class="seccionLogin">
-        <form action="" method="get">
+        <form action="form.php" id="formulario" method="post" >
           <h2 class="tituloLogin">Iniciar Sesión</h2>
           <div>
-            <input type="email" placeholder="Email" name="email" />
+            <input type="email" placeholder="Email *" name="email" id="email"/>
             <div class="error-text"></div>
           </div>
           <div>
             <input
               type="password"
-              placeholder="Contraseña"
+              placeholder="Contraseña *"
               id="password"
               name="password"
             />
             <div class="error-text"></div>
           </div>
           <div>
-            <input class="boton" type="submit" value="Iniciar Sesión" />
+            <input class="boton" type="submit" value="Iniciar Sesión"/>
           </div>
+          <div class="formLogin">
+            <p class="errorForm" id="mensajeError"></p>
+          </div>
+          
           <div>
             <a class="registrarse" href="./Register.html"
-              >Registrarse</a
+              >¿No tiene cuenta? Regístrese aquí</a
             >
           </div>
         </form>
