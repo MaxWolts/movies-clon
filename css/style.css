@@ -297,8 +297,44 @@ ul li img:hover {
 
 
 
+.poster{
+    width: 250px;
+    height: 250px;
+}
 
+.pelicula{
+    width: 250px;
+    height: 350px;
+    display: inline-block;
+    margin: 10px;
+    margin: auto;
+    margin-left: 10%;
+    margin-top: 70px;
+    margin-right: 20px;
+}
 
+.nameMovie{
+    font-size: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+
+.peliculasContenedor{
+    /* padding-top: 80px; */
+    background-color: black;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* 
+.poster{
+    width: 350px;
+    height: 350px;
+} */
 
 
 

@@ -20,3 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Buscar películas con: ', searchValue);
     });
 });
+
+
+
+    
+    
